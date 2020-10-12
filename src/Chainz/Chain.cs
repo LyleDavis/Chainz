@@ -17,7 +17,7 @@ namespace Chainz
 
         public Chain<TArg> Prepend<TChainLink>() where TChainLink : IChainLink<TArg>
         {
-            _links.Prepend(typeof(TChainLink));
+            _links.Insert(0, typeof(TChainLink));
             return this;
         }
 
@@ -36,6 +36,21 @@ namespace Chainz
         {
             var index = _links.IndexOf(typeof(TNextChainLink));
             _links.Insert(index, typeof(TChainLinkToInsert));
+            return this;
+        }
+
+        public Chain<TArg> InsertAt<TChainLinkToInsert>(int index)
+            where TChainLinkToInsert : IChainLink<TArg>
+        {
+            _links.Insert(index, typeof(TChainLinkToInsert));
+            return this;
+        }
+        
+        public Chain<TArg> Replace<TChainLinkToRemove, TChainLinkToAdd>()
+            where TChainLinkToRemove : IChainLink<TArg>
+            where TChainLinkToAdd : IChainLink<TArg>
+        {
+            _links[_links.IndexOf(typeof(TChainLinkToRemove))] = typeof(TChainLinkToAdd);
             return this;
         }
 
