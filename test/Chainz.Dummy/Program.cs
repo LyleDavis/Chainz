@@ -6,7 +6,7 @@ namespace Chainz.Dummy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("stuff");
         }
     }
 }
