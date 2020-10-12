@@ -7,10 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{03174998-0CD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chainz", "src\Chainz\Chainz.csproj", "{1315C4FC-1671-4745-948E-8593BD617A5E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C54D1E75-2B0B-4C1A-98DC-3135437A23DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chainz.Dummy", "test\Chainz.Dummy\Chainz.Dummy.csproj", "{38B70D4E-67C0-4721-A782-4A2A55969C27}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,21 +32,8 @@ Global
 		{1315C4FC-1671-4745-948E-8593BD617A5E}.Release|x64.Build.0 = Release|Any CPU
 		{1315C4FC-1671-4745-948E-8593BD617A5E}.Release|x86.ActiveCfg = Release|Any CPU
 		{1315C4FC-1671-4745-948E-8593BD617A5E}.Release|x86.Build.0 = Release|Any CPU
-		{38B70D4E-67C0-4721-A782-4A2A55969C27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{38B70D4E-67C0-4721-A782-4A2A55969C27}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{38B70D4E-67C0-4721-A782-4A2A55969C27}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{38B70D4E-67C0-4721-A782-4A2A55969C27}.Debug|x64.Build.0 = Debug|Any CPU
-		{38B70D4E-67C0-4721-A782-4A2A55969C27}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{38B70D4E-67C0-4721-A782-4A2A55969C27}.Debug|x86.Build.0 = Debug|Any CPU
-		{38B70D4E-67C0-4721-A782-4A2A55969C27}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{38B70D4E-67C0-4721-A782-4A2A55969C27}.Release|Any CPU.Build.0 = Release|Any CPU
-		{38B70D4E-67C0-4721-A782-4A2A55969C27}.Release|x64.ActiveCfg = Release|Any CPU
-		{38B70D4E-67C0-4721-A782-4A2A55969C27}.Release|x64.Build.0 = Release|Any CPU
-		{38B70D4E-67C0-4721-A782-4A2A55969C27}.Release|x86.ActiveCfg = Release|Any CPU
-		{38B70D4E-67C0-4721-A782-4A2A55969C27}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1315C4FC-1671-4745-948E-8593BD617A5E} = {03174998-0CD6-4C65-930E-86B260F55AB6}
-		{38B70D4E-67C0-4721-A782-4A2A55969C27} = {C54D1E75-2B0B-4C1A-98DC-3135437A23DD}
 	EndGlobalSection
 EndGlobal
