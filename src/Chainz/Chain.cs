@@ -35,8 +35,7 @@ namespace Chainz
         /// <returns>Returns self for fluid interface</returns>
         public Chain<TArg> Prepend<TChainLink>() where TChainLink : IChainLink<TArg>
         {
-            InsertAt<TChainLink>(0);
-            return this;
+            return InsertAt<TChainLink>(0);
         }
 
         /// <summary>
@@ -50,8 +49,7 @@ namespace Chainz
             where TChainLinkToInsert : IChainLink<TArg>
         {
             var index = _links.IndexOf(typeof(TPreviousChainLink)) + 1;
-            _links.Insert(index, typeof(TChainLinkToInsert));
-            return this;
+            return InsertAt<TChainLinkToInsert>(index);
         }
 
         /// <summary>
@@ -65,8 +63,7 @@ namespace Chainz
             where TChainLinkToInsert : IChainLink<TArg>
         {
             var index = _links.IndexOf(typeof(TNextChainLink));
-            _links.Insert(index, typeof(TChainLinkToInsert));
-            return this;
+            return InsertAt<TChainLinkToInsert>(index);
         }
 
         /// <summary>
