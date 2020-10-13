@@ -9,8 +9,6 @@ namespace Chainz
     {
         public IChainLink<TArg> Next { get; set; }
 
-        public void Handle(TArg args)
-        {
-        }
+        public void Handle(TArg args) { }
     }
 }
