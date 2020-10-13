@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Chainz</PackageId>
@@ -9,6 +8,7 @@
       A generic library implementation of the Middleware/Chain of Responsibility Pattern.
       Useful for building and modifying "pipelines" of code.
     </Description>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/LyleDavis/Chainz</RepositoryUrl>
   </PropertyGroup>
-
 </Project>
